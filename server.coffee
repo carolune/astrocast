@@ -2,13 +2,17 @@ mongo = require 'mongodb'
 express = require 'express'
 monk = require 'monk'
 
+console.log "here"
+
 db =  monk process.env.MONGOHQ_URL
 app = new express()
-
+console.log "here"
 app.use(express.static(__dirname + '/public'))
 
 bites = db.get("bites")
 bites.drop()
+
+console.log "here"
 
 bites.insert({ name: "The earth is round, like a ball, and slightly flattened at the North and South poles", tags: ["earth", "solar system", "planet"] })
 bites.insert({ name: "We remain on the earth because gravity pulls us towards the ground", tags: ["earth"] })
@@ -34,6 +38,7 @@ bites.insert({ name: "The Sun is 149,600,000km away from the Earth", tags: ["sun
 bites.insert({ name: "It takes 8.3 minutes for light to travel from the sun to the earth", tags: ["sun","earth"] })
 bites.insert({ name: "Solar flares are when the sun throws out a a large amount of charged particles", tags: ["sun"] })
 
+console.log "here"
 
 app.get '/', (req,res)->
   "hi"
@@ -51,6 +56,8 @@ app.get '/bites',(req,res) =>
 app.get '/bites/:id',(req,res) =>
   bites.find {"_id": req.params.id }, (e,docs)=>
     res.json(docs)
+
+console.log "here"
 
 port = process.env.PORT || 7777
 app.listen(port)
