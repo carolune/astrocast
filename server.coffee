@@ -1,10 +1,9 @@
 mongo = require 'mongodb'
 express = require 'express'
 monk = require 'monk'
+
 db =  monk process.env.MONGOHQ_URL
 app = new express()
-
-
 
 app.use(express.static(__dirname + '/public'))
 
