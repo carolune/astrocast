@@ -52,5 +52,6 @@ app.get '/bites/:id',(req,res) =>
   bites.find {"_id": req.params.id }, (e,docs)=>
     res.json(docs)
 
-app.listen(7777)
+port = process.env.PORT || 7777
+app.listen(port)
 console.log "starting server"
