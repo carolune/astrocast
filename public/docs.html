@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Astrocast - Bitesize Astronomy API</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Brought to you by keen astronomers">
+		<meta name="keywords" content="astronomy">
+		<meta name="author" content="the govenders">
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Inika:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/astrocast.css" rel="stylesheet" media="screen">
+
+	</head>
+
+		<!-- SCRIPTS -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/vkbeautyfy.js"></script>
+		<script type="text/javascript" src="assets/js/apidoc.js"></script>
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+		  </div>
+
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+			<ul class="nav navbar-nav">
+			  <li id="home"><a href="index.html">Home</a></li>
+			  <li id="docs"><a href="docs.html">API documentation</a></li>
+			  <li id="docs"><a href="examples.html">Examples</a></li>
+			  <li id="contribute"><a href="contribute.html">Contribute</a></li>
+			  <li id="github"><a href="https://github.com/carolune/astrocast.git" target="_blank">GitHub</a></li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</nav>
+
+		<div class="header">
+				<h1 class="headertext"><br>Astrocast</h1>
+				<h3 class="headertext">Bitesize Astronomy API</h3>
+		</div>
+
+		<div class="container">
+			<div class="col-sm-12" style="min-height:40px;">
+			</div>
+			<div class="col-sm-12 page-container" id="apimain">
+				<h1>API Documentation</h1>
+				<p>The Astrocast API serves bitesize astronomy knowledge in JSON format. The current version can only be used with the GET method.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="col-sm-12" style="min-height:40px;"></div>
+			<div class="col-sm-12">
+				<a data-toggle="modal" href="#twitter-modal" >@carolune</a> 2013
+			</div>
+		</div>
+
+		<div class="modal fade" id="twitter-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/carolune" data-widget-id="373445717957677057">Tweets by @carolune</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
+	</body>
+</html>

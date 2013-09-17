@@ -1,0 +1,54 @@
+body {
+	padding-top:30px;
+	background-color:#E7E7E7; 
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 160%;
+	color: #222222;
+}
+
+.header {
+	background-image: url('../img/astrocast_header-01.png');
+	background-repeat: repeat-x;
+	min-height: 240px;
+	vertical-align: middle;
+}
+
+.page-container {
+	background-color:#F8F8F8;
+	padding: 50px;
+}
+
+.headertext {
+	color: #FEFEFE;
+	text-align: center;
+}
+
+.cenver {
+    vertical-align: middle;
+}
+
+h3 {
+	font-family: 'Inika', serif;
+}
+
+h2 {
+	font-family: 'Inika', serif;
+}
+
+h1 {
+	font-family: 'Inika', serif;
+	font-size: 44px;
+}
+
+p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.bookcover {
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
