@@ -1,11 +1,19 @@
 
 function showRandomBite() {
 	// empty the div
+	$('#randombite').html();
 	// load all the data
-	// print a random bite
-	// create a button that, when clicked, displays another random bite
+	var myUrl = "http://astrocast.heroku.com/bites";
+	$.getJSON(myUrl, function (bites) {
+		// print a random bite
+		generateRandomBite(bites);
+	});
 	var contents = 'show some random bite here';
 	$('#randombite').append(contents);
+}
+
+function generateRandomBite(bites) {
+	console.log(bites);
 }
 
 function makeSearchLink() {
