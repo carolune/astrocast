@@ -2,6 +2,7 @@
   "name": "mongoui",
   "version": "0.0.1",
   "engines": {
+    "coffee-script" : "*"
     "node": ">= v0.6"
   },
   "dependencies": {
