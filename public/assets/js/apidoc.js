@@ -9,9 +9,9 @@ function apiDoc(title, printTitle, method, url, format, explanation, template) {
 	this.template = template;
 }
 
-var bites = new apiDoc('bites','Bites','GET','http://localhost:7777/bites',  'JSON', 'Returns all the astronomy bites. Each bite has content and an array of tags.', '[{"name" : "Here comes the content of the astronomy bite","tags" : ["astronomy", "bite"], "_id" : "..."}]');
+var bites = new apiDoc('bites','Bites','GET','http://astrocast.heroku.com/bites',  'JSON', 'Returns all the astronomy bites. Each bite has content and an array of tags.', '[{"name" : "Here comes the content of the astronomy bite","tags" : ["astronomy", "bite"], "_id" : "..."}]');
 
-var tags = new apiDoc('tags','Tags','GET','http://localhost:7777/bites?tags=TAG1,TAG2',  'JSON', 'Returns the astronomy bites tagged TAG1 AND TAG2.', '[{"name" : "Here comes the content of the astronomy bite","tags" : ["TAG1", "TAG2", "another_tag"], "_id" : "..."}]');
+var tags = new apiDoc('tags','Tags','GET','http://astrocast.heroku.com/bites?tags=TAG1,TAG2',  'JSON', 'Returns the astronomy bites tagged TAG1 AND TAG2.', '[{"name" : "Here comes the content of the astronomy bite","tags" : ["TAG1", "TAG2", "another_tag"], "_id" : "..."}]');
 
 
 function displayAPI(apiname) {
