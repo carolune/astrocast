@@ -10,17 +10,17 @@ function showRandomBite() {
 		generateRandomBite(bites);
 	});
 	var contents = randomBite;
+	console.log('contents: ', contents);
 	$('#randombite').append(contents);
 }
 
 function generateRandomBite(bites) {
-	var count = 0;
-	//console.log(bites);
-	count = bites.length;
-	console.log(count);
+	var count = Object.keys(bites);
+	console.log('count: ', count);
 	// pick a random index
 	var index = Math.floor(Math.random() * (count + 1));
 	randomBite = bites[index].name;
+	console.log('randomBite: ', randomBite);
 }
 
 function makeSearchLink() {
