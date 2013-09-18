@@ -1,3 +1,4 @@
+var randomBite;
 
 function showRandomBite() {
 	// empty the div
@@ -8,12 +9,18 @@ function showRandomBite() {
 		// print a random bite
 		generateRandomBite(bites);
 	});
-	var contents = 'show some random bite here';
+	var contents = randomBite;
 	$('#randombite').append(contents);
 }
 
 function generateRandomBite(bites) {
-	console.log(bites);
+	var count = 0;
+	//console.log(bites);
+	count = bites.length;
+	console.log(count);
+	// pick a random index
+	var index = Math.floor(Math.random() * (count + 1));
+	randomBite = bites[index].name;
 }
 
 function makeSearchLink() {
