@@ -6,12 +6,10 @@ function showRandomBite() {
 	// load all the data
 	var myUrl = "http://astrocast.heroku.com/bites";
 	$.getJSON(myUrl, function (bites) {
-		// print a random bite
 		generateRandomBite(bites);
+		console.log('contents: ', randomBite);
+		$('#randombite').append(randomBite);
 	});
-	var contents = randomBite;
-	console.log('contents: ', contents);
-	$('#randombite').append(contents);
 }
 
 function generateRandomBite(bites) {
